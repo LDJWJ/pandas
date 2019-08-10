@@ -138,7 +138,6 @@ class CachedAccessor(object):
         object.__setattr__(obj, self._name, accessor_obj)
         return accessor_obj
 
-
 def _register_accessor(name, cls):
     def decorator(accessor):
         if hasattr(cls, name):
